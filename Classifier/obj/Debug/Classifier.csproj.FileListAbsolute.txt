@@ -1,0 +1,6 @@
+C:\Users\Mike\My Dropbox\Projects\Visual Studio 2010\Projects\University Assignments\HLTAssignment\Classifier\bin\Debug\Classifier.dll
+C:\Users\Mike\My Dropbox\Projects\Visual Studio 2010\Projects\University Assignments\HLTAssignment\Classifier\bin\Debug\Classifier.pdb
+C:\Users\Mike\My Dropbox\Projects\Visual Studio 2010\Projects\University Assignments\HLTAssignment\Classifier\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Mike\My Dropbox\Projects\Visual Studio 2010\Projects\University Assignments\HLTAssignment\Classifier\obj\Debug\Classifier.dll
+C:\Users\Mike\My Dropbox\Projects\Visual Studio 2010\Projects\University Assignments\HLTAssignment\Classifier\obj\Debug\Classifier.pdb
+C:\Users\Mike\My Dropbox\Projects\Visual Studio 2010\Projects\University Assignments\HLTAssignment\Classifier\bin\Debug\stop_words.txt

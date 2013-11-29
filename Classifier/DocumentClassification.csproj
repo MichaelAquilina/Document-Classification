@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8766AD7D-E190-48D0-89A3-3DF97CDE6BBC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Classifier</RootNamespace>
+    <AssemblyName>Classifier</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classification\DecisionTree\DecisionNode.cs" />
+    <Compile Include="Classification\DecisionTree\DecisionTree.cs" />
+    <Compile Include="Classification\DecisionTree\DLeafNode.cs" />
+    <Compile Include="Classification\DecisionTree\DNode.cs" />
+    <Compile Include="Classification\Perceptron.cs" />
+    <Compile Include="Classification\VectorN.cs" />
+    <Compile Include="Classification\Winnow.cs" />
+    <Compile Include="Comparers\ManhattenComparer.cs" />
+    <Compile Include="Comparers\CosineComparer.cs" />
+    <Compile Include="Comparers\IDocumentComparer.cs" />
+    <Compile Include="Comparers\EuclidianComparer.cs" />
+    <Compile Include="Classification\KNN.cs" />
+    <Compile Include="DocumentClassifier.cs" />
+    <Compile Include="Classification\Classifier.cs" />
+    <Compile Include="LabeledDocumentVector.cs" />
+    <Compile Include="Suffix Tree\DocumentIndex.cs" />
+    <Compile Include="Suffix Tree\DocumentNode.cs" />
+    <Compile Include="DocumentVector.cs" />
+    <Compile Include="SgmlParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Suffix Tree\SuffixLeafNode.cs" />
+    <Compile Include="Suffix Tree\SuffixNode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="stop_words.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
